@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('guests', function (Blueprint $table) {
             $table->id();
-            $table->string('guest_id')->unique('guid'+rand(0001,10000000));
+            $table->string('guest_id');
             $table->string('name');
             $table->string('email');
             $table->string('phone');

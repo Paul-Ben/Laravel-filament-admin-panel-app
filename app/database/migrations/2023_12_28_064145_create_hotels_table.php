@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('hotels', function (Blueprint $table) {
             $table->id();
-            $table->string('hotelId')->unique('htl' + rand(0001,100000));
+            $table->string('hotelId');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('address');
